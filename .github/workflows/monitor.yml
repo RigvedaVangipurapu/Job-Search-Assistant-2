@@ -9,6 +9,8 @@ on:
 jobs:
   monitor:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
     - name: Checkout code
@@ -54,3 +56,5 @@ jobs:
         git add known_todays_jobs.json
         git diff --staged --quiet || git commit -m "Update Amazon today's jobs [skip ci]"
         git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
