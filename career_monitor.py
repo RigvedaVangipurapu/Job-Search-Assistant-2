@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Automated Amazon Career Page Notification System
-Monitors Amazon Careers for job count changes and sends email alerts
+Monitors Amazon Careers for jobs updated today and sends email alerts
 """
 
 from playwright.sync_api import sync_playwright
@@ -10,20 +10,19 @@ import smtplib
 import json
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from datetime import datetime
+from datetime import datetime, date
+import re
 
 # Configuration variables - Amazon URLs to monitor
 TARGET_URLS = {
     "amazon_bi_data_engineering": {
         "url": "https://amazon.jobs/content/en/job-categories/business-intelligence-data-engineering?country%5B%5D=US&employment-type%5B%5D=Full+time&role-type%5B%5D=0",
-        "name": "Amazon Business Intelligence & Data Engineering Jobs",
-        "selector": "span[data-testid='job-count']"  # Will need to be updated based on actual page structure
+        "name": "Amazon Business Intelligence & Data Engineering Jobs"
     }
 }
 
 SCREENSHOT_PATH = "career_page_screenshot.png"
-KNOWN_JOBS_FILE = "known_job_counts.json"  # JSON for multiple URLs
-KNOWN_TOP_JOBS_FILE = "known_top_jobs.json"  # Track top 5 jobs for each category
+KNOWN_TODAYS_JOBS_FILE = "known_todays_jobs.json"  # Track jobs updated today
 
 # Email configuration (will be set via environment variables in GitHub Actions)
 SMTP_SERVER = os.getenv('SMTP_SERVER', 'smtp.gmail.com')
@@ -32,204 +31,223 @@ SENDER_EMAIL = os.getenv('SENDER_EMAIL', '')
 SENDER_PASSWORD = os.getenv('SENDER_PASSWORD', '')
 RECIPIENT_EMAILS = os.getenv('RECIPIENT_EMAILS', '')  # Comma-separated list of emails
 
-def extract_job_count(page, selector):
-    """Extract the total job count from the Amazon career page"""
-    print("Extracting job count...")
+def extract_todays_jobs(page):
+    """Extract jobs that were updated today from the Amazon career page"""
+    print("Extracting jobs updated today...")
     
     try:
         # Wait for the page to load completely
-        page.wait_for_load_state("networkidle")
+        page.wait_for_load_state("domcontentloaded")
         
-        # Try multiple selectors that might contain job count
-        selectors_to_try = [
-            "span[data-testid='job-count']",
-            ".job-count",
-            "[data-testid*='count']",
-            "span:contains('jobs')",
-            "div:contains('jobs')",
-            "span:contains('openings')",
-            "div:contains('openings')",
-            "span:contains('positions')",
-            "div:contains('positions')"
-        ]
+        # Get today's date in the format used by Amazon (M/D/YYYY)
+        today = date.today()
+        today_formatted = f"{today.month}/{today.day}/{today.year}"
+        print(f"Looking for jobs updated on: {today_formatted}")
         
-        job_count = None
-        for sel in selectors_to_try:
+        # Find all job elements that contain "Updated:" text
+        updated_elements = page.query_selector_all('div[data-test-component="StencilText"]')
+        print(f"Found {len(updated_elements)} elements with StencilText component")
+        
+        todays_jobs = []
+        
+        # Look for job containers using the specific structure we found
+        print("Looking for job containers with the correct structure...")
+        
+        # Look for job containers that have the header structure
+        job_containers = page.query_selector_all('div[class*="header-module_root"]')
+        print(f"Found {len(job_containers)} job containers with header structure")
+        
+        for i, container in enumerate(job_containers):
             try:
-                if ":contains" in sel:
-                    # Handle text-based selectors differently
-                    elements = page.query_selector_all("*")
-                    for element in elements:
-                        text = element.inner_text().strip().lower()
-                        if "job" in text and any(char.isdigit() for char in text):
-                            # Extract number from text
-                            import re
-                            numbers = re.findall(r'\d+', text)
-                            if numbers:
-                                job_count = int(numbers[0])
-                                print(f"Found job count using text search: {job_count}")
-                                break
-                else:
-                    # Try CSS selector
-                    element = page.query_selector(sel)
-                    if element:
-                        text = element.inner_text().strip()
-                        print(f"Raw text from selector '{sel}': '{text}'")
-                        if text and any(char.isdigit() for char in text):
-                            import re
-                            numbers = re.findall(r'\d+', text)
-                            if numbers:
-                                job_count = int(numbers[0])
-                                print(f"Found job count using selector '{sel}': {job_count}")
-                                break
+                container_text = container.inner_text()
+                if "Updated:" in container_text and today_formatted in container_text:
+                    print(f"Found job container {i} with today's date")
+                    
+                    # Look for job title in h3 > a element (the specific structure we found)
+                    title_element = container.query_selector('h3 a')
+                    if title_element:
+                        job_title = title_element.inner_text().strip()
+                        if job_title and len(job_title) > 5:
+                            job_info = {
+                                'title': job_title,
+                                'updated_date': today_formatted,
+                                'element_text': f"Found in container {i}"
+                            }
+                            todays_jobs.append(job_info)
+                            print(f"Found job updated today: {job_title}")
+                        else:
+                            print(f"Job title too short or empty in container {i}")
+                    else:
+                        print(f"Could not find h3 a element in container {i}")
             except Exception as e:
-                print(f"Error with selector '{sel}': {str(e)}")
+                print(f"Error processing container {i}: {str(e)}")
                 continue
         
-        if job_count is not None:
-            print(f"Successfully extracted job count: {job_count}")
-            return job_count
-        else:
-            print("Could not find job count using any selector")
-            # Take a screenshot for debugging
-            page.screenshot(path="amazon_debug_screenshot.png")
-            print("Debug screenshot saved as amazon_debug_screenshot.png")
-            return None
-            
-    except Exception as e:
-        print(f"Error extracting job count: {str(e)}")
-        return None
-
-def load_known_job_counts():
-    """Load the last known job counts from file"""
-    try:
-        if os.path.exists(KNOWN_JOBS_FILE):
-            with open(KNOWN_JOBS_FILE, 'r') as f:
-                return json.load(f)
-        return {}
-    except Exception as e:
-        print(f"Error loading known job counts: {str(e)}")
-        return {}
-
-def save_job_counts(counts):
-    """Save the current job counts to file"""
-    try:
-        with open(KNOWN_JOBS_FILE, 'w') as f:
-            json.dump(counts, f, indent=2)
-        print(f"Saved job counts to {KNOWN_JOBS_FILE}")
-    except Exception as e:
-        print(f"Error saving job counts: {str(e)}")
-
-def extract_top_jobs(page, max_jobs=5):
-    """Extract top job titles from the Amazon career page"""
-    try:
-        # Try multiple selectors for job titles
-        selectors_to_try = [
-            "h3[data-testid*='job-title']",
-            "h3.job-title",
-            "a[data-testid*='job-title']",
-            "a.job-title",
-            "h3",
-            "h2",
-            "a[href*='/jobs/']",
-            ".job-title",
-            "[data-testid*='title']"
-        ]
+        # If the container approach didn't work, try the original approach
+        if not todays_jobs:
+            print("Container approach didn't work, trying original approach...")
+            for i, element in enumerate(updated_elements):
+                try:
+                    text = element.inner_text().strip()
+                    
+                    if "Updated:" in text and today_formatted in text:
+                        print(f"Found 'Updated:' in element {i}")
+                        # This is a job updated today, find the job title
+                        job_title = find_job_title_near_element(element, page)
+                        if job_title:
+                            job_info = {
+                                'title': job_title,
+                                'updated_date': today_formatted,
+                                'element_text': text
+                            }
+                            todays_jobs.append(job_info)
+                            print(f"Found job updated today: {job_title}")
+                        else:
+                            print(f"Could not find job title for element {i}")
+                except Exception as e:
+                    print(f"Error processing element {i}: {str(e)}")
+                    continue
         
-        jobs = []
-        for selector in selectors_to_try:
-            try:
-                elements = page.query_selector_all(selector)
-                for element in elements:
-                    job_title = element.inner_text().strip()
-                    if job_title and len(job_title) > 5 and len(job_title) < 200:  # Basic validation
-                        # Filter out common non-job elements
-                        if not any(skip in job_title.lower() for skip in ['search', 'filter', 'sort', 'apply', 'browse', 'view all']):
-                            jobs.append(job_title)
-                            if len(jobs) >= max_jobs:
-                                break
-                if jobs:
-                    break
-            except Exception as e:
-                print(f"Error with selector '{selector}': {str(e)}")
-                continue
-        
-        print(f"Extracted {len(jobs)} job titles")
-        return jobs[:max_jobs]  # Return only top 5
+        print(f"Found {len(todays_jobs)} jobs updated today")
+        return todays_jobs
         
     except Exception as e:
-        print(f"Error extracting job titles: {str(e)}")
+        print(f"Error extracting today's jobs: {str(e)}")
         return []
 
-def load_known_top_jobs():
-    """Load previously known top jobs from JSON file"""
+def find_job_title_near_element(updated_element, page):
+    """Find the job title near the updated date element"""
     try:
-        if os.path.exists(KNOWN_TOP_JOBS_FILE):
-            with open(KNOWN_TOP_JOBS_FILE, 'r') as f:
+        # First, let's look at the HTML structure around the updated element
+        print("Examining HTML structure around updated element...")
+        
+        # Get the parent container that likely contains the job listing
+        parent = updated_element
+        for level in range(15):  # Go up to 15 levels up
+            if parent is None:
+                break
+            
+            # Get the HTML of the current parent to understand structure
+            try:
+                parent_html = parent.inner_html()
+                if len(parent_html) > 1000:  # Only print if it's a substantial container
+                    print(f"Level {level} parent HTML (first 500 chars): {parent_html[:500]}")
+            except:
+                pass
+            
+            # Look for job title in current level and all descendants
+            title_selectors = [
+                'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
+                'a[href*="/jobs/"]', 
+                'a[href*="/job/"]',
+                '.job-title', 
+                '[data-testid*="title"]',
+                '[data-testid*="job-title"]',
+                'span[data-testid*="title"]',
+                'div[data-testid*="title"]',
+                'a[data-testid*="job"]',
+                'div[data-testid*="job"]'
+            ]
+            
+            for selector in title_selectors:
+                try:
+                    # Look in current element
+                    title_element = parent.query_selector(selector)
+                    if title_element:
+                        title_text = title_element.inner_text().strip()
+                        if title_text and len(title_text) > 5 and len(title_text) < 200:
+                            # Filter out common non-job elements
+                            if not any(skip in title_text.lower() for skip in ['search', 'filter', 'sort', 'apply', 'browse', 'view all', 'updated:', 'date:', 'location:', 'read more']):
+                                print(f"Found job title at level {level} with selector '{selector}': {title_text}")
+                                return title_text
+                    
+                    # Look in all descendants
+                    title_elements = parent.query_selector_all(selector)
+                    for element in title_elements:
+                        title_text = element.inner_text().strip()
+                        if title_text and len(title_text) > 5 and len(title_text) < 200:
+                            if not any(skip in title_text.lower() for skip in ['search', 'filter', 'sort', 'apply', 'browse', 'view all', 'updated:', 'date:', 'location:', 'read more']):
+                                print(f"Found job title in descendant at level {level} with selector '{selector}': {title_text}")
+                                return title_text
+                except Exception as e:
+                    continue
+            
+            # Look for any text that might be a job title (fallback)
+            try:
+                all_text_elements = parent.query_selector_all('*')
+                for element in all_text_elements:
+                    text = element.inner_text().strip()
+                    if text and len(text) > 10 and len(text) < 200:
+                        # Check if it looks like a job title
+                        if any(keyword in text.lower() for keyword in ['engineer', 'analyst', 'manager', 'specialist', 'developer', 'scientist', 'architect', 'consultant', 'director', 'lead', 'senior', 'principal', 'business intelligence', 'data']):
+                            if not any(skip in text.lower() for skip in ['search', 'filter', 'sort', 'apply', 'browse', 'view all', 'updated:', 'date:', 'location:', 'job', 'career', 'amazon', 'read more', 'usa']):
+                                print(f"Found potential job title by keyword matching: {text}")
+                                return text
+            except:
+                pass
+            
+            # Move to parent element
+            try:
+                parent = parent.evaluate('el => el.parentElement')
+            except:
+                break
+        
+        print("Could not find job title near updated element")
+        return None
+    except Exception as e:
+        print(f"Error finding job title: {str(e)}")
+        return None
+
+def load_known_todays_jobs():
+    """Load previously known today's jobs from JSON file"""
+    try:
+        if os.path.exists(KNOWN_TODAYS_JOBS_FILE):
+            with open(KNOWN_TODAYS_JOBS_FILE, 'r') as f:
                 return json.load(f)
         return {}
     except Exception as e:
-        print(f"Error loading known top jobs: {str(e)}")
+        print(f"Error loading known today's jobs: {str(e)}")
         return {}
 
-def save_top_jobs(top_jobs):
-    """Save top jobs to JSON file"""
+def save_todays_jobs(todays_jobs):
+    """Save today's jobs to JSON file"""
     try:
-        with open(KNOWN_TOP_JOBS_FILE, 'w') as f:
-            json.dump(top_jobs, f, indent=2)
-        print(f"Saved top jobs to {KNOWN_TOP_JOBS_FILE}")
+        with open(KNOWN_TODAYS_JOBS_FILE, 'w') as f:
+            json.dump(todays_jobs, f, indent=2)
+        print(f"Saved today's jobs to {KNOWN_TODAYS_JOBS_FILE}")
     except Exception as e:
-        print(f"Error saving top jobs: {str(e)}")
+        print(f"Error saving today's jobs: {str(e)}")
 
-def compare_top_jobs(current_jobs, previous_jobs, source_name):
-    """Compare current and previous top jobs and return changes"""
-    changes = []
+def compare_todays_jobs(current_jobs, previous_jobs, source_name):
+    """Compare current and previous today's jobs and return new jobs"""
+    new_jobs = []
     
     if not previous_jobs:
         # First run - all jobs are new
         for job in current_jobs:
-            changes.append({
+            new_jobs.append({
                 'action': 'new',
-                'job_title': job,
-                'position': current_jobs.index(job) + 1
+                'job_title': job['title'],
+                'updated_date': job['updated_date']
             })
-        return changes
+        return new_jobs
+    
+    # Get previous job titles for comparison
+    previous_titles = [job['title'] for job in previous_jobs]
     
     # Check for new jobs
-    for i, job in enumerate(current_jobs):
-        if job not in previous_jobs:
-            changes.append({
+    for job in current_jobs:
+        if job['title'] not in previous_titles:
+            new_jobs.append({
                 'action': 'new',
-                'job_title': job,
-                'position': i + 1
+                'job_title': job['title'],
+                'updated_date': job['updated_date']
             })
     
-    # Check for removed jobs
-    for job in previous_jobs:
-        if job not in current_jobs:
-            changes.append({
-                'action': 'removed',
-                'job_title': job,
-                'position': previous_jobs.index(job) + 1
-            })
-    
-    # Check for position changes
-    for i, job in enumerate(current_jobs):
-        if job in previous_jobs:
-            old_position = previous_jobs.index(job) + 1
-            new_position = i + 1
-            if old_position != new_position:
-                changes.append({
-                    'action': 'moved',
-                    'job_title': job,
-                    'old_position': old_position,
-                    'new_position': new_position
-                })
-    
-    return changes
+    return new_jobs
 
-def send_email_alert(changes, job_changes=None, current_top_jobs=None):
-    """Send personalized email alert when job counts change or top jobs change"""
+def send_email_alert(new_jobs, source_name, source_url):
+    """Send email alert when new jobs updated today are found"""
     if not all([SENDER_EMAIL, SENDER_PASSWORD, RECIPIENT_EMAILS]):
         print("Email configuration incomplete. Skipping email alert.")
         return False
@@ -240,54 +258,39 @@ def send_email_alert(changes, job_changes=None, current_top_jobs=None):
         print("No valid recipient emails found. Skipping email alert.")
         return False
     
+    if not new_jobs:
+        print("No new jobs found. Skipping email alert.")
+        return False
+    
     try:
-        # Filter to only show categories with new jobs (increases)
-        categories_with_new_jobs = {k: v for k, v in changes.items() if v['current'] > v['previous']}
-        
-        if not categories_with_new_jobs:
-            print("No categories with new jobs found. Skipping email alert.")
-            return False
-        
-        # Create personalized subject based on what changed
-        if len(categories_with_new_jobs) == 1:
-            source_name = list(categories_with_new_jobs.values())[0]['name']
-            change = list(categories_with_new_jobs.values())[0]['current'] - list(categories_with_new_jobs.values())[0]['previous']
-            subject = f"🚨 {source_name}: {change} new jobs posted!"
+        # Create personalized subject
+        job_count = len(new_jobs)
+        if job_count == 1:
+            subject = f"🚨 Amazon: 1 new job updated today!"
         else:
-            total_new_jobs = sum(data['current'] - data['previous'] for data in categories_with_new_jobs.values())
-            subject = f"🚨 {len(categories_with_new_jobs)} categories: {total_new_jobs} new jobs posted!"
+            subject = f"🚨 Amazon: {job_count} new jobs updated today!"
         
         # Create message
         msg = MIMEMultipart()
         msg['From'] = SENDER_EMAIL
-        msg['To'] = ', '.join(recipient_list)  # Show all recipients in To field
+        msg['To'] = ', '.join(recipient_list)
         msg['Subject'] = subject
         
         # Build personalized email body
-        body = "🎯 Amazon Careers Job Monitoring Alert\n"
+        body = "🎯 Amazon Careers - Jobs Updated Today Alert\n"
         body += "=" * 50 + "\n\n"
         body += f"⏰ Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n"
+        body += f"📋 {source_name}\n"
+        body += f"📅 Updated: {date.today().strftime('%B %d, %Y')}\n\n"
         
-        # Add total new jobs count
-        total_new_jobs = sum(data['current'] - data['previous'] for data in categories_with_new_jobs.values())
-        body += f"🎉 {total_new_jobs} new job(s) posted across {len(categories_with_new_jobs)} categories!\n\n"
+        body += f"🎉 {job_count} new job(s) updated today!\n\n"
         
-        # Show only categories with new jobs and their top 5 roles
-        for source_key, data in categories_with_new_jobs.items():
-            change = data['current'] - data['previous']
-            body += f"📋 {data['name']} (+{change} jobs)\n"
-            body += "-" * 40 + "\n"
-            
-            # Get the current top 5 jobs for this category
-            if current_top_jobs and source_key in current_top_jobs:
-                top_jobs = current_top_jobs[source_key]
-                for i, job_title in enumerate(top_jobs, 1):
-                    body += f"   {i}. {job_title}\n"
-            else:
-                body += "   (Top jobs not available)\n"
-            
-            body += f"\n   🔗 View all jobs: {data['url']}\n\n"
+        # List the new jobs
+        for i, job in enumerate(new_jobs, 1):
+            body += f"   {i}. {job['job_title']}\n"
+            body += f"      📅 Updated: {job['updated_date']}\n\n"
         
+        body += f"🔗 View all jobs: {source_url}\n\n"
         body += "🤖 This is an automated alert from your Amazon career monitoring system.\n"
         body += "💡 Set up job alerts on Amazon Careers for instant notifications!"
         
@@ -301,7 +304,7 @@ def send_email_alert(changes, job_changes=None, current_top_jobs=None):
         server.sendmail(SENDER_EMAIL, recipient_list, text)
         server.quit()
         
-        print(f"📧 Personalized email alert sent to {len(recipient_list)} recipient(s)! {len(categories_with_new_jobs)} category(ies) with new jobs.")
+        print(f"📧 Email alert sent to {len(recipient_list)} recipient(s)! {job_count} new job(s) found.")
         return True
         
     except Exception as e:
@@ -322,14 +325,10 @@ def main():
             browser = p.chromium.launch(headless=True)  # Headless for GitHub Actions
             page = browser.new_page()
             
-            # Load previous job counts and top jobs
-            known_counts = load_known_job_counts()
-            known_top_jobs = load_known_top_jobs()
-            current_counts = {}
-            current_top_jobs = {}
-            changes = {}
-            increases = {}  # Track only increases for email alerts
-            job_changes = {}  # Track changes in top jobs
+            # Load previous today's jobs
+            known_todays_jobs = load_known_todays_jobs()
+            current_todays_jobs = {}
+            all_new_jobs = []
             
             # Monitor each URL
             for source_key, config in TARGET_URLS.items():
@@ -337,73 +336,34 @@ def main():
                 print(f"URL: {config['url']}")
                 
                 try:
-                    # Navigate to the URL
-                    page.goto(config['url'], wait_until="networkidle")
+                    # Navigate to the URL with longer timeout and different wait strategy
+                    print("Navigating to Amazon careers page...")
+                    page.goto(config['url'], timeout=60000, wait_until="domcontentloaded")
+                    
+                    # Wait a bit more for dynamic content
+                    page.wait_for_timeout(5000)
                     
                     # Take a screenshot for debugging
                     page.screenshot(path=SCREENSHOT_PATH)
                     print(f"Screenshot saved as {SCREENSHOT_PATH}")
                     
-                    # Extract job count
-                    current_count = extract_job_count(page, config['selector'])
+                    # Extract jobs updated today
+                    current_jobs = extract_todays_jobs(page)
+                    current_todays_jobs[source_key] = current_jobs
                     
-                    if current_count is None:
-                        print(f"Failed to extract job count for {config['name']}")
-                        # Still try to extract top jobs even if count fails
-                        current_count = 0
+                    print(f"Found {len(current_jobs)} jobs updated today")
                     
-                    current_counts[source_key] = current_count
-                    previous_count = known_counts.get(source_key)
+                    # Compare with previous today's jobs
+                    previous_jobs = known_todays_jobs.get(source_key, [])
+                    new_jobs = compare_todays_jobs(current_jobs, previous_jobs, config['name'])
                     
-                    print(f"Current count: {current_count}")
-                    
-                    # Extract top 5 jobs
-                    print("Extracting top 5 jobs...")
-                    current_jobs = extract_top_jobs(page)
-                    current_top_jobs[source_key] = current_jobs
-                    
-                    # Compare with previous top jobs
-                    previous_jobs = known_top_jobs.get(source_key, [])
-                    job_changes_list = compare_top_jobs(current_jobs, previous_jobs, config['name'])
-                    
-                    if job_changes_list:
-                        job_changes[config['name']] = job_changes_list
-                        print(f"Job changes detected: {len(job_changes_list)} changes")
-                        for change in job_changes_list:
-                            if change['action'] == 'new':
-                                print(f"  🆕 New: #{change['position']} {change['job_title']}")
-                            elif change['action'] == 'removed':
-                                print(f"  ❌ Removed: {change['job_title']}")
-                            elif change['action'] == 'moved':
-                                print(f"  🔄 Moved: {change['job_title']} (#{change['old_position']} → #{change['new_position']})")
+                    if new_jobs:
+                        all_new_jobs.extend(new_jobs)
+                        print(f"New jobs detected: {len(new_jobs)} new jobs")
+                        for job in new_jobs:
+                            print(f"  🆕 New: {job['job_title']}")
                     else:
-                        print("No job changes detected in top 5")
-                    
-                    if previous_count is None:
-                        # First run for this source
-                        print(f"First run for {config['name']}. Saving initial count.")
-                    else:
-                        print(f"Previous count: {previous_count}")
-                        
-                        if current_count != previous_count:
-                            # Job count changed
-                            change = current_count - previous_count
-                            change_text = f"+{change}" if change > 0 else str(change)
-                            print(f"Job count changed! {previous_count} → {current_count} ({change_text})")
-                            
-                            # Record the change
-                            changes[source_key] = {
-                                'name': config['name'],
-                                'url': config['url'],
-                                'previous': previous_count,
-                                'current': current_count
-                            }
-                            
-                            # Track increases separately for email alerts
-                            if current_count > previous_count:
-                                increases[source_key] = changes[source_key]
-                        else:
-                            print("No changes detected.")
+                        print("No new jobs updated today")
                 
                 except Exception as e:
                     print(f"Error monitoring {config['name']}: {str(e)}")
@@ -412,23 +372,24 @@ def main():
             # Close browser
             browser.close()
             
-            # Send email if there were increases
-            if increases:
+            # Send email if there were new jobs
+            if all_new_jobs:
                 print(f"\n📧 Sending email alert...")
-                print(f"  • {len(increases)} source(s) with increased job counts")
+                print(f"  • {len(all_new_jobs)} new job(s) found")
                 
-                if send_email_alert(increases, job_changes, current_top_jobs):
+                # Send alert for the first source (assuming single source for now)
+                source_key = list(TARGET_URLS.keys())[0]
+                source_config = TARGET_URLS[source_key]
+                
+                if send_email_alert(all_new_jobs, source_config['name'], source_config['url']):
                     print("Email alert sent successfully!")
                 else:
                     print("Failed to send email alert.")
-            elif changes:
-                print(f"\n📊 {len(changes)} source(s) changed but no increases detected. No email sent.")
             else:
-                print("\n✅ No changes detected across all sources.")
+                print("\n✅ No new jobs updated today.")
             
-            # Update stored counts and top jobs
-            save_job_counts(current_counts)
-            save_top_jobs(current_top_jobs)
+            # Update stored today's jobs
+            save_todays_jobs(current_todays_jobs)
             
             print("\n🎯 Amazon career monitoring completed successfully!")
             

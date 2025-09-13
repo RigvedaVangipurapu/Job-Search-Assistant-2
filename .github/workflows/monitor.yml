@@ -51,6 +51,6 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add known_job_counts.json known_top_jobs.json
-        git diff --staged --quiet || git commit -m "Update Amazon job counts and top jobs [skip ci]"
+        git add known_todays_jobs.json
+        git diff --staged --quiet || git commit -m "Update Amazon today's jobs [skip ci]"
         git push
