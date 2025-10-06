@@ -1,3 +1,19 @@
 {
-  "amazon_bi_data_engineering": []
+  "amazon_bi_data_engineering": [
+    {
+      "title": "Business Intelligence Engineer II, R2L Delivery BI",
+      "updated_date": "10/6/2025",
+      "element_text": "Found in container 0"
+    },
+    {
+      "title": "Cloud Support Engineer, Amazon Business Analytics",
+      "updated_date": "10/6/2025",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Analytics Specialist, Engagement, Retention & Acquisition Analytics",
+      "updated_date": "10/6/2025",
+      "element_text": "Found in container 2"
+    }
+  ]
 }
