@@ -1,24 +1,3 @@
 {
-  "amazon_bi_data_engineering": [
-    {
-      "title": "Business Intelligence Engineer II, Rapid and Rural Logistics, R2L",
-      "updated_date": "10/16/2025",
-      "element_text": "Found in container 0"
-    },
-    {
-      "title": "Senior Business Intelligence Engineer, Analytics & Agentic AI, Speed Analytics and Science",
-      "updated_date": "10/16/2025",
-      "element_text": "Found in container 1"
-    },
-    {
-      "title": "Business Intelligence Engineer II, R2L Delivery BI",
-      "updated_date": "10/16/2025",
-      "element_text": "Found in container 2"
-    },
-    {
-      "title": "Business Intelligence Engineer II, Rapid and Rural Logistics, R2L",
-      "updated_date": "10/16/2025",
-      "element_text": "Found in container 3"
-    }
-  ]
+  "amazon_bi_data_engineering": []
 }
