@@ -1,14 +1,19 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "BI Engineer, Healthcare, Finance Operations, Global Data Analytics",
+      "title": "Business Intelligence Engineer, Marketplace",
       "updated_date": "2/11/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Business Intelligence Engineer, Amazon Advertising, Ads Finance",
+      "title": "BI Engineer, Healthcare, Finance Operations, Global Data Analytics",
       "updated_date": "2/11/2026",
       "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intelligence Engineer, Amazon Advertising, Ads Finance",
+      "updated_date": "2/11/2026",
+      "element_text": "Found in container 2"
     }
   ]
 }
