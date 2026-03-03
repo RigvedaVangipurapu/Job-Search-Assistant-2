@@ -1,14 +1,29 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Analyst, Amazon Intermodal, Amazon Intermodal",
+      "title": "Data Scientist, Devices and Services FinTech",
       "updated_date": "3/3/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Data Engineer , AWS Infrastructure Supply Chain Intelligence",
+      "title": "Business Intelligence Engineer, Rapid & Rural Logistics (R2L)",
       "updated_date": "3/3/2026",
       "element_text": "Found in container 1"
+    },
+    {
+      "title": "Sr. Business Intel Engineer, Global Standards Customer Excellence",
+      "updated_date": "3/3/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Business Analyst, Amazon Intermodal, Amazon Intermodal",
+      "updated_date": "3/3/2026",
+      "element_text": "Found in container 3"
+    },
+    {
+      "title": "Data Engineer , AWS Infrastructure Supply Chain Intelligence",
+      "updated_date": "3/3/2026",
+      "element_text": "Found in container 4"
     }
   ]
 }
