@@ -1,14 +1,29 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer, FIO Analytics",
+      "title": "Data Engineer, AWS DC Central Operations",
       "updated_date": "3/5/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Business Intelligence Engineer, Rapid & Rural Logistics (R2L)",
+      "title": "Business Intelligence Engineer, ProdOps OAT, Leo",
       "updated_date": "3/5/2026",
       "element_text": "Found in container 1"
+    },
+    {
+      "title": "Senior Business Intelligence Engineer, ProdOps OAT, Amazon Leo",
+      "updated_date": "3/5/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Business Intelligence Engineer, FIO Analytics",
+      "updated_date": "3/5/2026",
+      "element_text": "Found in container 3"
+    },
+    {
+      "title": "Business Intelligence Engineer, Rapid & Rural Logistics (R2L)",
+      "updated_date": "3/5/2026",
+      "element_text": "Found in container 4"
     }
   ]
 }
