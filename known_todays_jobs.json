@@ -1,14 +1,24 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Sr Business Intelligence Engineer, AWS GDSP A&I",
+      "title": "Business Analyst , Worldwide Grocery Stores (WWGS)",
       "updated_date": "3/26/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Sr. Business Intelligence Engineer, Prime Video Commerce",
+      "title": "Business Analyst, Global Logistics Exports",
       "updated_date": "3/26/2026",
       "element_text": "Found in container 1"
+    },
+    {
+      "title": "Sr Business Intelligence Engineer, AWS GDSP A&I",
+      "updated_date": "3/26/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Sr. Business Intelligence Engineer, Prime Video Commerce",
+      "updated_date": "3/26/2026",
+      "element_text": "Found in container 3"
     }
   ]
 }
