@@ -1,3 +1,19 @@
 {
-  "amazon_bi_data_engineering": []
+  "amazon_bi_data_engineering": [
+    {
+      "title": "Applied Scientist II, CLS - Technology",
+      "updated_date": "3/27/2026",
+      "element_text": "Found in container 0"
+    },
+    {
+      "title": "Business Intelligence Engineer , Infra Capacity Delivery (AMER)",
+      "updated_date": "3/27/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Senior Business Intelligence Engineer , Infra Capacity Delivery (AMER)",
+      "updated_date": "3/27/2026",
+      "element_text": "Found in container 2"
+    }
+  ]
 }
