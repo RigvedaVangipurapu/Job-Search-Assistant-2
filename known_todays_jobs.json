@@ -1,19 +1,3 @@
 {
-  "amazon_bi_data_engineering": [
-    {
-      "title": "Business Intelligence Engineer, Denied Party Screening",
-      "updated_date": "4/3/2026",
-      "element_text": "Found in container 0"
-    },
-    {
-      "title": "Data Scientist, Devices and Services FinTech",
-      "updated_date": "4/3/2026",
-      "element_text": "Found in container 1"
-    },
-    {
-      "title": "Data Engineer , AWS Infrastructure Supply Chain Intelligence",
-      "updated_date": "4/3/2026",
-      "element_text": "Found in container 2"
-    }
-  ]
+  "amazon_bi_data_engineering": []
 }
