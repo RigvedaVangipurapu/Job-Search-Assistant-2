@@ -1,3 +1,19 @@
 {
-  "amazon_bi_data_engineering": []
+  "amazon_bi_data_engineering": [
+    {
+      "title": "Data Scientist, Central Learning Solutions - Technology",
+      "updated_date": "4/6/2026",
+      "element_text": "Found in container 0"
+    },
+    {
+      "title": "Business Intelligence Engineer, Enterprise Planning, Amazon Leo",
+      "updated_date": "4/6/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intel Engineer, re:Cycle Reverse Logistics",
+      "updated_date": "4/6/2026",
+      "element_text": "Found in container 2"
+    }
+  ]
 }
