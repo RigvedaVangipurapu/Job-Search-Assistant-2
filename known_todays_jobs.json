@@ -1,34 +1,3 @@
 {
-  "amazon_bi_data_engineering": [
-    {
-      "title": "Business Intelligence Engineer , Amazon Robotics",
-      "updated_date": "4/13/2026",
-      "element_text": "Found in container 0"
-    },
-    {
-      "title": "Business Analyst, Global Logistics Exports",
-      "updated_date": "4/13/2026",
-      "element_text": "Found in container 1"
-    },
-    {
-      "title": "Sr. Business Analyst , Robotics Technical Services",
-      "updated_date": "4/13/2026",
-      "element_text": "Found in container 2"
-    },
-    {
-      "title": "Sr. Business Analyst, Central RME",
-      "updated_date": "4/13/2026",
-      "element_text": "Found in container 3"
-    },
-    {
-      "title": "Business Intelligence Engineer II, Amazon Key",
-      "updated_date": "4/13/2026",
-      "element_text": "Found in container 4"
-    },
-    {
-      "title": "Business Intelligence Engineer, CLS Technology",
-      "updated_date": "4/13/2026",
-      "element_text": "Found in container 5"
-    }
-  ]
+  "amazon_bi_data_engineering": []
 }
