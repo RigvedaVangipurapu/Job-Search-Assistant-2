@@ -1,3 +1,19 @@
 {
-  "amazon_bi_data_engineering": []
+  "amazon_bi_data_engineering": [
+    {
+      "title": "Business Intelligence Engineer, CLS Technology",
+      "updated_date": "4/17/2026",
+      "element_text": "Found in container 0"
+    },
+    {
+      "title": "Senior Business Intelligence Engineer, AMZL ORBIT",
+      "updated_date": "4/17/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intelligence Engineer, AMZL Strategic Planning-Analytics Automation",
+      "updated_date": "4/17/2026",
+      "element_text": "Found in container 2"
+    }
+  ]
 }
