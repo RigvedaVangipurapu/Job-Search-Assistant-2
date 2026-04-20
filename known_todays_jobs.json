@@ -1,3 +1,34 @@
 {
-  "amazon_bi_data_engineering": []
+  "amazon_bi_data_engineering": [
+    {
+      "title": "Business Analyst 2, Relay Fleet Tech",
+      "updated_date": "4/20/2026",
+      "element_text": "Found in container 0"
+    },
+    {
+      "title": "Associate Director of Analytics, SAMBA",
+      "updated_date": "4/20/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intelligence Engineer , GTMO DATA",
+      "updated_date": "4/20/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Business Intelligence Engineer, R2L Analytics",
+      "updated_date": "4/20/2026",
+      "element_text": "Found in container 3"
+    },
+    {
+      "title": "Business Intelligence Engineer, AMZL Strategic Planning-Analytics Automation",
+      "updated_date": "4/20/2026",
+      "element_text": "Found in container 4"
+    },
+    {
+      "title": "Business Analyst II, Operations Technology Solutions, Global Workforce Management",
+      "updated_date": "4/20/2026",
+      "element_text": "Found in container 5"
+    }
+  ]
 }
