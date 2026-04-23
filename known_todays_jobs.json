@@ -1,14 +1,3 @@
 {
-  "amazon_bi_data_engineering": [
-    {
-      "title": "Business Intelligence Engineer, Global Transportation Services",
-      "updated_date": "4/22/2026",
-      "element_text": "Found in container 0"
-    },
-    {
-      "title": "Business Intelligence Engineer I, Gbl Transportatn Srvcs",
-      "updated_date": "4/22/2026",
-      "element_text": "Found in container 1"
-    }
-  ]
+  "amazon_bi_data_engineering": []
 }
