@@ -1,3 +1,29 @@
 {
-  "amazon_bi_data_engineering": []
+  "amazon_bi_data_engineering": [
+    {
+      "title": "Business Intelligence Engineer, Amazon Games",
+      "updated_date": "4/27/2026",
+      "element_text": "Found in container 0"
+    },
+    {
+      "title": "Director, Business Analytics, SAMBA",
+      "updated_date": "4/27/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Data Engineer II, Transportation Execution, Speed Team",
+      "updated_date": "4/27/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Business Intelligence Engineer, Global Transportation Services",
+      "updated_date": "4/27/2026",
+      "element_text": "Found in container 3"
+    },
+    {
+      "title": "Business Analyst, Assortment Analytics",
+      "updated_date": "4/27/2026",
+      "element_text": "Found in container 4"
+    }
+  ]
 }
