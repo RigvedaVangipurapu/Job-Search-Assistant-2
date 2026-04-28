@@ -1,14 +1,19 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer, WHS Data",
+      "title": "Strategy & Biz Dev Manager, Intl Theatrical Distribution, MGM",
       "updated_date": "4/28/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Data Engineer II, Zappos Analytics",
+      "title": "Business Intelligence Engineer, WHS Data",
       "updated_date": "4/28/2026",
       "element_text": "Found in container 1"
+    },
+    {
+      "title": "Data Engineer II, Zappos Analytics",
+      "updated_date": "4/28/2026",
+      "element_text": "Found in container 2"
     }
   ]
 }
