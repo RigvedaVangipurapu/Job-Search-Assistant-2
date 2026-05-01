@@ -1,29 +1,3 @@
 {
-  "amazon_bi_data_engineering": [
-    {
-      "title": "Business Intelligence Engineer, Community Operations",
-      "updated_date": "4/30/2026",
-      "element_text": "Found in container 0"
-    },
-    {
-      "title": "Senior Business Intelligence Engineer, Under-the-Roof Business Intelligence",
-      "updated_date": "4/30/2026",
-      "element_text": "Found in container 1"
-    },
-    {
-      "title": "Business Intelligence Engineer, Private Brands Finance",
-      "updated_date": "4/30/2026",
-      "element_text": "Found in container 2"
-    },
-    {
-      "title": "Business Intelligence Engineer, Private Brands Finance",
-      "updated_date": "4/30/2026",
-      "element_text": "Found in container 3"
-    },
-    {
-      "title": "Senior Business Intelligence Engineer, AMZL ORBIT",
-      "updated_date": "4/30/2026",
-      "element_text": "Found in container 4"
-    }
-  ]
+  "amazon_bi_data_engineering": []
 }
