@@ -1,34 +1,9 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer I, Network Design Planning & Engineering (NDPE)",
-      "updated_date": "5/7/2026",
+      "title": "Business Intelligence Engineer II, SCOT-AIM",
+      "updated_date": "5/8/2026",
       "element_text": "Found in container 0"
-    },
-    {
-      "title": "Data Engineer II, OTS - Data ANCHOR Team",
-      "updated_date": "5/7/2026",
-      "element_text": "Found in container 1"
-    },
-    {
-      "title": "Data Engineer I, OTS - Data ANCHOR Team",
-      "updated_date": "5/7/2026",
-      "element_text": "Found in container 2"
-    },
-    {
-      "title": "Data Engineer II, Network Design Planning & Engineering",
-      "updated_date": "5/7/2026",
-      "element_text": "Found in container 3"
-    },
-    {
-      "title": "Director, Customer Service Analytics",
-      "updated_date": "5/7/2026",
-      "element_text": "Found in container 4"
-    },
-    {
-      "title": "Data Engineer, Denied Party Screening, AWS Compliance & Security Assurance",
-      "updated_date": "5/7/2026",
-      "element_text": "Found in container 5"
     }
   ]
 }
