@@ -1,9 +1,19 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer II, SCOT-AIM",
+      "title": "Data Engineer, SPTC",
       "updated_date": "5/8/2026",
       "element_text": "Found in container 0"
+    },
+    {
+      "title": "Sr. BIE, Amazon Leo B2B",
+      "updated_date": "5/8/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intelligence Engineer II, SCOT-AIM",
+      "updated_date": "5/8/2026",
+      "element_text": "Found in container 2"
     }
   ]
 }
