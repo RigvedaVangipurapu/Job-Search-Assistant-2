@@ -1,14 +1,19 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer, Selling Partner Insights and Analytics",
+      "title": "Sr. BIE, Amazon Leo B2B",
       "updated_date": "5/12/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Sr Data Engineer, Ads AI Core Services",
+      "title": "BIE, NonSort, Supply Chain Execution",
       "updated_date": "5/12/2026",
       "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intelligence Engineer, Selling Partner Insights and Analytics",
+      "updated_date": "5/12/2026",
+      "element_text": "Found in container 2"
     }
   ]
 }
