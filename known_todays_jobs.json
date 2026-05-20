@@ -1,24 +1,44 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Theatrical Strategy & Biz Dev Manager, Amazon MGM Studios",
+      "title": "Business Intelligence Engineer, FIO Analytics",
       "updated_date": "5/20/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Business Intelligence Engineer, Vulnerability Management and Remediation",
+      "title": "Business Intelligence Engineer, Ads Sales Finanace Analytics",
       "updated_date": "5/20/2026",
       "element_text": "Found in container 1"
     },
     {
-      "title": "Senior Business Intelligence Engineer, Amazon Customer Service",
+      "title": "SAP Data compliance Analyst , Amazon Leo Governance",
       "updated_date": "5/20/2026",
       "element_text": "Found in container 2"
     },
     {
-      "title": "Data Engineer, Compensation, CPSA",
+      "title": "Sr Business Intelligence Engineer, Amazon Global Data Center Ops Central Insight and Analytics Team",
       "updated_date": "5/20/2026",
       "element_text": "Found in container 3"
+    },
+    {
+      "title": "Theatrical Strategy & Biz Dev Manager, Amazon MGM Studios",
+      "updated_date": "5/20/2026",
+      "element_text": "Found in container 4"
+    },
+    {
+      "title": "Business Intelligence Engineer, Vulnerability Management and Remediation",
+      "updated_date": "5/20/2026",
+      "element_text": "Found in container 5"
+    },
+    {
+      "title": "Senior Business Intelligence Engineer, Amazon Customer Service",
+      "updated_date": "5/20/2026",
+      "element_text": "Found in container 6"
+    },
+    {
+      "title": "Data Engineer, Compensation, CPSA",
+      "updated_date": "5/20/2026",
+      "element_text": "Found in container 7"
     }
   ]
 }
