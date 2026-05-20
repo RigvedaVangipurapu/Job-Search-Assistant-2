@@ -1,19 +1,24 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer, Vulnerability Management and Remediation",
+      "title": "Theatrical Strategy & Biz Dev Manager, Amazon MGM Studios",
       "updated_date": "5/20/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Senior Business Intelligence Engineer, Amazon Customer Service",
+      "title": "Business Intelligence Engineer, Vulnerability Management and Remediation",
       "updated_date": "5/20/2026",
       "element_text": "Found in container 1"
     },
     {
-      "title": "Data Engineer, Compensation, CPSA",
+      "title": "Senior Business Intelligence Engineer, Amazon Customer Service",
       "updated_date": "5/20/2026",
       "element_text": "Found in container 2"
+    },
+    {
+      "title": "Data Engineer, Compensation, CPSA",
+      "updated_date": "5/20/2026",
+      "element_text": "Found in container 3"
     }
   ]
 }
