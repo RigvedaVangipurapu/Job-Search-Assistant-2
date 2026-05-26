@@ -1,9 +1,24 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer, Customer Data & Analytics, Customer Strategy",
+      "title": "Data Engineer, Amazon Fuse",
       "updated_date": "5/26/2026",
       "element_text": "Found in container 0"
+    },
+    {
+      "title": "BIE, NonSort, Supply Chain Execution",
+      "updated_date": "5/26/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Sr BIE, NonSort, Supply Chain Execution",
+      "updated_date": "5/26/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Business Intelligence Engineer, Customer Data & Analytics, Customer Strategy",
+      "updated_date": "5/26/2026",
+      "element_text": "Found in container 3"
     }
   ]
 }
