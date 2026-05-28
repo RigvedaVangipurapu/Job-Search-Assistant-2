@@ -1,24 +1,3 @@
 {
-  "amazon_bi_data_engineering": [
-    {
-      "title": "Senior Business Intelligence Engineer, Global Logistics Analytics",
-      "updated_date": "5/27/2026",
-      "element_text": "Found in container 0"
-    },
-    {
-      "title": "Sr Business Intelligence Engineer III, SCOT - Long Term Planning and Forecasting",
-      "updated_date": "5/27/2026",
-      "element_text": "Found in container 1"
-    },
-    {
-      "title": "Business Intelligence Engineer, Rapid & Rural Logistics (R2L) Science & AI",
-      "updated_date": "5/27/2026",
-      "element_text": "Found in container 2"
-    },
-    {
-      "title": "Data Engineer, AWS Compliance & Security Assurance",
-      "updated_date": "5/27/2026",
-      "element_text": "Found in container 3"
-    }
-  ]
+  "amazon_bi_data_engineering": []
 }
