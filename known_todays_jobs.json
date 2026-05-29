@@ -1,29 +1,3 @@
 {
-  "amazon_bi_data_engineering": [
-    {
-      "title": "Senior Business Analyst, Central Programs Analytics",
-      "updated_date": "5/28/2026",
-      "element_text": "Found in container 0"
-    },
-    {
-      "title": "Theatrical Strategy & Biz Dev Manager, Amazon MGM Studios",
-      "updated_date": "5/28/2026",
-      "element_text": "Found in container 1"
-    },
-    {
-      "title": "Data Engineer, ORBIT (AMZL operational reporting and BI)",
-      "updated_date": "5/28/2026",
-      "element_text": "Found in container 2"
-    },
-    {
-      "title": "Business Analyst, Advertising, Support Products & Services",
-      "updated_date": "5/28/2026",
-      "element_text": "Found in container 3"
-    },
-    {
-      "title": "Business Intelligence Engineer, SCOT-AIM",
-      "updated_date": "5/28/2026",
-      "element_text": "Found in container 4"
-    }
-  ]
+  "amazon_bi_data_engineering": []
 }
