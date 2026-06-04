@@ -1,3 +1,24 @@
 {
-  "amazon_bi_data_engineering": []
+  "amazon_bi_data_engineering": [
+    {
+      "title": "Business Intelligence Engineer, Advertising Services Finance Analytics",
+      "updated_date": "6/4/2026",
+      "element_text": "Found in container 0"
+    },
+    {
+      "title": "Business Intelligence Engineer II, SCOT - Long Term Planning and Forecasting",
+      "updated_date": "6/4/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Senior Business Analyst, Central Programs Analytics",
+      "updated_date": "6/4/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Business Intelligence Engineer II, AWS Infrastructure Supply Chain Intelligence",
+      "updated_date": "6/4/2026",
+      "element_text": "Found in container 3"
+    }
+  ]
 }
