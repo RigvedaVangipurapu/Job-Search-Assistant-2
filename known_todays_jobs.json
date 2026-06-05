@@ -1,14 +1,39 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer - SCOT, Fulfillment Optimization, SCOT-FO",
+      "title": "Business Intel Engineer I, ORBIT Demand and Capacity Planning BI",
       "updated_date": "6/5/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Business Intelligence Engineer, R2L Analytics",
+      "title": "Business Intelligence Engineer II, Rapid and Rural Logistics",
       "updated_date": "6/5/2026",
       "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intel Engineer - II, Amazon Robotics, Amazon Robotics, Global Operations - Artificial Intelligence (GO-AI)",
+      "updated_date": "6/5/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Business Intelligence Engineer II, CDR Pillar 1 Strategy and DX",
+      "updated_date": "6/5/2026",
+      "element_text": "Found in container 3"
+    },
+    {
+      "title": "Business Intelligence Engineer, Advertising Services Finance Analytics",
+      "updated_date": "6/5/2026",
+      "element_text": "Found in container 4"
+    },
+    {
+      "title": "Business Intelligence Engineer - SCOT, Fulfillment Optimization, SCOT-FO",
+      "updated_date": "6/5/2026",
+      "element_text": "Found in container 5"
+    },
+    {
+      "title": "Business Intelligence Engineer, R2L Analytics",
+      "updated_date": "6/5/2026",
+      "element_text": "Found in container 6"
     }
   ]
 }
