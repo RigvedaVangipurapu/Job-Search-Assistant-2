@@ -1,9 +1,19 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Sr. Data Engineer, WW Standardization & Automation",
+      "title": "Sr. Business Intelligence Engineer, ASP Ops - WWSO Sales & Biz Ops",
       "updated_date": "6/8/2026",
       "element_text": "Found in container 0"
+    },
+    {
+      "title": "Sr Business Intelligence Engineer, AWS Marketplace & Partner Services",
+      "updated_date": "6/8/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Sr. Data Engineer, WW Standardization & Automation",
+      "updated_date": "6/8/2026",
+      "element_text": "Found in container 2"
     }
   ]
 }
