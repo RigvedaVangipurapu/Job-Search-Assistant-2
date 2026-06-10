@@ -1,9 +1,24 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer II, SCOT-AIM MX",
+      "title": "Business Analyst, WFS Process Excellence & Transformation",
       "updated_date": "6/10/2026",
       "element_text": "Found in container 0"
+    },
+    {
+      "title": "Business Analyst, Operations Internal Communications",
+      "updated_date": "6/10/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intelligence Engineer, North America Transportation Services",
+      "updated_date": "6/10/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Business Intelligence Engineer II, SCOT-AIM MX",
+      "updated_date": "6/10/2026",
+      "element_text": "Found in container 3"
     }
   ]
 }
