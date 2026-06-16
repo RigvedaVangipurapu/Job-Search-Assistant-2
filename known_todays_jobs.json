@@ -1,9 +1,24 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer, WWGS Retail BI",
+      "title": "Senior Business Intelligence Engineer, Devices Demand Science Optimization",
       "updated_date": "6/16/2026",
       "element_text": "Found in container 0"
+    },
+    {
+      "title": "Senior Business Analyst, Central Programs Analytics",
+      "updated_date": "6/16/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Analyst, Amazon Transportation Services, NAST Product Engg",
+      "updated_date": "6/16/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Business Intelligence Engineer, WWGS Retail BI",
+      "updated_date": "6/16/2026",
+      "element_text": "Found in container 3"
     }
   ]
 }
