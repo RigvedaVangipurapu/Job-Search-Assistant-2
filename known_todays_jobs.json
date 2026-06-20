@@ -1,29 +1,3 @@
 {
-  "amazon_bi_data_engineering": [
-    {
-      "title": "Business Analyst, Worldwide Grocery, Merch Ops Business Analytics",
-      "updated_date": "6/19/2026",
-      "element_text": "Found in container 0"
-    },
-    {
-      "title": "Data Engineer II, Transportation Execution, Speed Team",
-      "updated_date": "6/19/2026",
-      "element_text": "Found in container 1"
-    },
-    {
-      "title": "Senior Data Engineer, PV Prime Video TV-Tech",
-      "updated_date": "6/19/2026",
-      "element_text": "Found in container 2"
-    },
-    {
-      "title": "Data Engineer II, IAM and Abuse Prevention",
-      "updated_date": "6/19/2026",
-      "element_text": "Found in container 3"
-    },
-    {
-      "title": "Business Intelligence Engineer, Prime Video Partner Experience & Supply Chain",
-      "updated_date": "6/19/2026",
-      "element_text": "Found in container 4"
-    }
-  ]
+  "amazon_bi_data_engineering": []
 }
