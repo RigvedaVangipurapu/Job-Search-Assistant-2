@@ -1,14 +1,29 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Senior Analyst, Audible People & Places",
+      "title": "Business Intel Engineer, SCOT-AIM",
       "updated_date": "6/23/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Sr. Business Intelligence Engineer, AMZL ORBIT",
+      "title": "Senior Business Analyst, Network Balance and Equipment Optimization (NBEO)",
       "updated_date": "6/23/2026",
       "element_text": "Found in container 1"
+    },
+    {
+      "title": "Data Engineer I, AFT BI Content",
+      "updated_date": "6/23/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Senior Analyst, Audible People & Places",
+      "updated_date": "6/23/2026",
+      "element_text": "Found in container 3"
+    },
+    {
+      "title": "Sr. Business Intelligence Engineer, AMZL ORBIT",
+      "updated_date": "6/23/2026",
+      "element_text": "Found in container 4"
     }
   ]
 }
