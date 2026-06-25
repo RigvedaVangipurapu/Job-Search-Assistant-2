@@ -1,14 +1,19 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer, Amazon Customer Service",
+      "title": "Business Intelligence Engineer, NA Sales & Marketing",
       "updated_date": "6/25/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Business Intel Engineer II, Intellectual Property Protection",
+      "title": "Business Intelligence Engineer, Amazon Customer Service",
       "updated_date": "6/25/2026",
       "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intel Engineer II, Intellectual Property Protection",
+      "updated_date": "6/25/2026",
+      "element_text": "Found in container 2"
     }
   ]
 }
