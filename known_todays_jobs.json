@@ -1,19 +1,39 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer, NA Sales & Marketing",
+      "title": "Sr. Data Engineer, Amazon Fuse",
       "updated_date": "6/25/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Business Intelligence Engineer, Amazon Customer Service",
+      "title": "Data Engineer II, Prime Video Advertising",
       "updated_date": "6/25/2026",
       "element_text": "Found in container 1"
     },
     {
-      "title": "Business Intel Engineer II, Intellectual Property Protection",
+      "title": "Business Intelligence Engineer, Amazon Customer Service",
       "updated_date": "6/25/2026",
       "element_text": "Found in container 2"
+    },
+    {
+      "title": "Business System Analyst, re:Cycle Reverse Logistics",
+      "updated_date": "6/25/2026",
+      "element_text": "Found in container 3"
+    },
+    {
+      "title": "Senior Business Intelligence Engineer, Devices Supply Chain Technology",
+      "updated_date": "6/25/2026",
+      "element_text": "Found in container 4"
+    },
+    {
+      "title": "Business Intelligence Engineer, NA Sales & Marketing",
+      "updated_date": "6/25/2026",
+      "element_text": "Found in container 5"
+    },
+    {
+      "title": "Business Intel Engineer II, Intellectual Property Protection",
+      "updated_date": "6/25/2026",
+      "element_text": "Found in container 6"
     }
   ]
 }
