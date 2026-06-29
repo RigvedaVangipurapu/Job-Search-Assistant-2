@@ -1,9 +1,19 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Analyst, Worldwide Grocery, Merch Ops Business Analytics",
+      "title": "Senior Business Analyst, Relay Trust",
       "updated_date": "6/29/2026",
       "element_text": "Found in container 0"
+    },
+    {
+      "title": "Business Intelligence Engineer II, Amazon Freight",
+      "updated_date": "6/29/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Analyst, Worldwide Grocery, Merch Ops Business Analytics",
+      "updated_date": "6/29/2026",
+      "element_text": "Found in container 2"
     }
   ]
 }
