@@ -1,9 +1,24 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intel Engineer, SCOT-AIM",
+      "title": "Business Intelligence Engineer II, SCOT-FO, TVP",
       "updated_date": "7/2/2026",
       "element_text": "Found in container 0"
+    },
+    {
+      "title": "Business Analyst I, LTP Model Insights, TOM Planning, TOM Planning",
+      "updated_date": "7/2/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Sr. Business Intelligence Engr, NEST Product Engg",
+      "updated_date": "7/2/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Business Intel Engineer, SCOT-AIM",
+      "updated_date": "7/2/2026",
+      "element_text": "Found in container 3"
     }
   ]
 }
