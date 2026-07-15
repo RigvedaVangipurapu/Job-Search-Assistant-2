@@ -1,24 +1,3 @@
 {
-  "amazon_bi_data_engineering": [
-    {
-      "title": "Business Intelligence Engineer, ATS",
-      "updated_date": "7/14/2026",
-      "element_text": "Found in container 0"
-    },
-    {
-      "title": "Business Intel Engineer II, ORBIT Demand and Capacity Planning BI",
-      "updated_date": "7/14/2026",
-      "element_text": "Found in container 1"
-    },
-    {
-      "title": "Business Intelligence Engineer I, SCOT - Optimal Sourcing Systems",
-      "updated_date": "7/14/2026",
-      "element_text": "Found in container 2"
-    },
-    {
-      "title": "Business Intelligence Engineer, North America Transportation Services",
-      "updated_date": "7/14/2026",
-      "element_text": "Found in container 3"
-    }
-  ]
+  "amazon_bi_data_engineering": []
 }
