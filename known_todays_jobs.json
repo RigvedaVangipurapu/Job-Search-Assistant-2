@@ -1,3 +1,14 @@
 {
-  "amazon_bi_data_engineering": []
+  "amazon_bi_data_engineering": [
+    {
+      "title": "Director, Customer Service Analytics",
+      "updated_date": "7/15/2026",
+      "element_text": "Found in container 0"
+    },
+    {
+      "title": "Senior Analyst, Audible People & Places",
+      "updated_date": "7/15/2026",
+      "element_text": "Found in container 1"
+    }
+  ]
 }
