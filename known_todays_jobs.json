@@ -1,19 +1,24 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer, FIO Analytics",
+      "title": "Business Intelligence Engineer, Amazon Freight",
       "updated_date": "7/23/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Data Engineer II, Prime Video Advertising",
+      "title": "Business Intelligence Engineer, FIO Analytics",
       "updated_date": "7/23/2026",
       "element_text": "Found in container 1"
     },
     {
-      "title": "Data Engineer, Prime Video - GSS Planning & Strategy",
+      "title": "Data Engineer II, Prime Video Advertising",
       "updated_date": "7/23/2026",
       "element_text": "Found in container 2"
+    },
+    {
+      "title": "Data Engineer, Prime Video - GSS Planning & Strategy",
+      "updated_date": "7/23/2026",
+      "element_text": "Found in container 3"
     }
   ]
 }
