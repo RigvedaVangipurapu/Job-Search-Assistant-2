@@ -1,14 +1,29 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Senior Business Intelligence Engineer, WW FBA Central Analytics",
+      "title": "Business Intelligence Engineer, WW FBA Central Analytics",
       "updated_date": "7/29/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Business Intelligence Engineer, Forecasting & Labs Analytics",
+      "title": "Senior Business Intelligence Engineer, Amazon Customer Service",
       "updated_date": "7/29/2026",
       "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intelligence Engineer III, Intellectual Property Protection",
+      "updated_date": "7/29/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Business Intelligence Engineer, Worldwide Customer Service Finance",
+      "updated_date": "7/29/2026",
+      "element_text": "Found in container 3"
+    },
+    {
+      "title": "Business Intelligence Engineer, Forecasting & Labs Analytics",
+      "updated_date": "7/29/2026",
+      "element_text": "Found in container 4"
     }
   ]
 }
