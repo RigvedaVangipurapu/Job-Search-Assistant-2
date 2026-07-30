@@ -1,3 +1,24 @@
 {
-  "amazon_bi_data_engineering": []
+  "amazon_bi_data_engineering": [
+    {
+      "title": "Senior Business Intelligence Engineer, North America Supply Chain Execution Strategy",
+      "updated_date": "7/30/2026",
+      "element_text": "Found in container 0"
+    },
+    {
+      "title": "Business Intelligence Engineer, WWPS Tech Team Ops",
+      "updated_date": "7/30/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intelligence Engineer, Amazon Freight",
+      "updated_date": "7/30/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Business Intel Engineer, OIS/CXI Analytics , Ops Tech Solution Network Dev",
+      "updated_date": "7/30/2026",
+      "element_text": "Found in container 3"
+    }
+  ]
 }
