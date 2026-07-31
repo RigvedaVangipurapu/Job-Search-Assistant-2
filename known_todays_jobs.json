@@ -1,19 +1,29 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer - SCOT, Fulfillment Optimization, SCOT-FO",
+      "title": "Business Intelligence Engineer II, CDR Pillar 1 Strategy and DX",
       "updated_date": "7/31/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Business Intelligence Engineer II, SCOT - Long Term Planning and Forecasting",
+      "title": "Sr. Business Analyst, WWGS (Worldwide Grocery Stores), Operations Analytics",
       "updated_date": "7/31/2026",
       "element_text": "Found in container 1"
     },
     {
-      "title": "Business Intelligence Engineer II, SCOT-AIM MX",
+      "title": "Business Intelligence Engineer II, OpsTech IT, OTS Anchor Team",
       "updated_date": "7/31/2026",
       "element_text": "Found in container 2"
+    },
+    {
+      "title": "Business Intelligence Engineer - SCOT, Fulfillment Optimization, SCOT-FO",
+      "updated_date": "7/31/2026",
+      "element_text": "Found in container 3"
+    },
+    {
+      "title": "Business Intelligence Engineer II, SCOT - Long Term Planning and Forecasting",
+      "updated_date": "7/31/2026",
+      "element_text": "Found in container 4"
     }
   ]
 }
