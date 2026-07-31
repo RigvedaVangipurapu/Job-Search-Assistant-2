@@ -1,9 +1,19 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer II, SCOT-AIM MX",
+      "title": "Business Intelligence Engineer - SCOT, Fulfillment Optimization, SCOT-FO",
       "updated_date": "7/31/2026",
       "element_text": "Found in container 0"
+    },
+    {
+      "title": "Business Intelligence Engineer II, SCOT - Long Term Planning and Forecasting",
+      "updated_date": "7/31/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intelligence Engineer II, SCOT-AIM MX",
+      "updated_date": "7/31/2026",
+      "element_text": "Found in container 2"
     }
   ]
 }
