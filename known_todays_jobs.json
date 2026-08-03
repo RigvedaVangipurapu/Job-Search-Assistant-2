@@ -1,19 +1,34 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Analyst II , FBA Analytics",
+      "title": "Business Analyst, FBA Analytics",
       "updated_date": "8/3/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Business Intelligence Engineer, Forecasting & Labs Analytics",
+      "title": "Data Engineer I, AFT BI Content",
       "updated_date": "8/3/2026",
       "element_text": "Found in container 1"
     },
     {
-      "title": "Senior Business Intelligence Engineer, North America Supply Chain Execution Strategy",
+      "title": "Business Intelligence Engineer, Accounting",
       "updated_date": "8/3/2026",
       "element_text": "Found in container 2"
+    },
+    {
+      "title": "Business Analyst II , FBA Analytics",
+      "updated_date": "8/3/2026",
+      "element_text": "Found in container 3"
+    },
+    {
+      "title": "Business Intelligence Engineer, Forecasting & Labs Analytics",
+      "updated_date": "8/3/2026",
+      "element_text": "Found in container 4"
+    },
+    {
+      "title": "Senior Business Intelligence Engineer, North America Supply Chain Execution Strategy",
+      "updated_date": "8/3/2026",
+      "element_text": "Found in container 5"
     }
   ]
 }
