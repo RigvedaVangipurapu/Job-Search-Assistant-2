@@ -1,14 +1,34 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer I",
+      "title": "Business Intelligence Engineer II, OpsTech IT, OTS Anchor Team",
       "updated_date": "8/5/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Business Intelligence Engineer I, SCOT Buying",
+      "title": "Business Intelligence Engineer - SCOT, Fulfillment Optimization, SCOT-FO LRN",
       "updated_date": "8/5/2026",
       "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intelligence Engineer, WW FBA Central Analytics",
+      "updated_date": "8/5/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Data Engineer II, Prime Video Advertising",
+      "updated_date": "8/5/2026",
+      "element_text": "Found in container 3"
+    },
+    {
+      "title": "Business Intelligence Engineer I",
+      "updated_date": "8/5/2026",
+      "element_text": "Found in container 4"
+    },
+    {
+      "title": "Business Intelligence Engineer I, SCOT Buying",
+      "updated_date": "8/5/2026",
+      "element_text": "Found in container 5"
     }
   ]
 }
