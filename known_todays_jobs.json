@@ -1,14 +1,29 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Sr. Business Analyst, Sustainability Reporting, WW Sustainability",
+      "title": "Business Intelligence Engineer, North America Transportation Services",
       "updated_date": "8/7/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Business Intelligence Engineer III, Intellectual Property Protection",
+      "title": "Senior Business Analyst, GOEST (Global Operations Enterprise Services - Tech)",
       "updated_date": "8/7/2026",
       "element_text": "Found in container 1"
+    },
+    {
+      "title": "Data Engineer , AWS Infrastructure Supply Chain Intelligence",
+      "updated_date": "8/7/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Sr. Business Analyst, Sustainability Reporting, WW Sustainability",
+      "updated_date": "8/7/2026",
+      "element_text": "Found in container 3"
+    },
+    {
+      "title": "Business Intelligence Engineer III, Intellectual Property Protection",
+      "updated_date": "8/7/2026",
+      "element_text": "Found in container 4"
     }
   ]
 }
