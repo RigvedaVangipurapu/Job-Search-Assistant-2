@@ -1,9 +1,19 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer, North America Transportation Services",
+      "title": "Business Intelligence Engineer II, Intelligence & Industrialization",
       "updated_date": "8/14/2026",
       "element_text": "Found in container 0"
+    },
+    {
+      "title": "Business Analyst II, Network Balance and Equipment Optimization (NBEO)",
+      "updated_date": "8/14/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intelligence Engineer, North America Transportation Services",
+      "updated_date": "8/14/2026",
+      "element_text": "Found in container 2"
     }
   ]
 }
