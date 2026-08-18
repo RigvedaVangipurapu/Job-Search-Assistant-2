@@ -1,19 +1,34 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Sr. Business Intelligence Engr, NEST Product Engg",
+      "title": "Business Intelligence Engineer II, SCOT - Long Term Planning and Forecasting",
       "updated_date": "8/18/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Senior Business Intelligence Engineer, ProdOps OAT, Amazon Leo",
+      "title": "BI Engineer, AWS Finance, Analytics and Science Team",
       "updated_date": "8/18/2026",
       "element_text": "Found in container 1"
     },
     {
-      "title": "Business Intelligence Engineer II, Amazon Global Logistics",
+      "title": "Business Analyst, FBA Analytics",
       "updated_date": "8/18/2026",
       "element_text": "Found in container 2"
+    },
+    {
+      "title": "Sr. Business Intelligence Engr, NEST Product Engg",
+      "updated_date": "8/18/2026",
+      "element_text": "Found in container 3"
+    },
+    {
+      "title": "Senior Business Intelligence Engineer, ProdOps OAT, Amazon Leo",
+      "updated_date": "8/18/2026",
+      "element_text": "Found in container 4"
+    },
+    {
+      "title": "Business Intelligence Engineer II, Amazon Global Logistics",
+      "updated_date": "8/18/2026",
+      "element_text": "Found in container 5"
     }
   ]
 }
