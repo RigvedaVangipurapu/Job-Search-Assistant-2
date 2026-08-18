@@ -1,14 +1,19 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Senior Business Intelligence Engineer, ProdOps OAT, Amazon Leo",
+      "title": "Sr. Business Intelligence Engr, NEST Product Engg",
       "updated_date": "8/18/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Business Intelligence Engineer II, Amazon Global Logistics",
+      "title": "Senior Business Intelligence Engineer, ProdOps OAT, Amazon Leo",
       "updated_date": "8/18/2026",
       "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intelligence Engineer II, Amazon Global Logistics",
+      "updated_date": "8/18/2026",
+      "element_text": "Found in container 2"
     }
   ]
 }
