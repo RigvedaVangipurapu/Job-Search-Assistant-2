@@ -1,29 +1,3 @@
 {
-  "amazon_bi_data_engineering": [
-    {
-      "title": "Business Intelligence Engineer, North America Transportation Services",
-      "updated_date": "8/20/2026",
-      "element_text": "Found in container 0"
-    },
-    {
-      "title": "Communications Business Analyst, Operations Internal Communications",
-      "updated_date": "8/20/2026",
-      "element_text": "Found in container 1"
-    },
-    {
-      "title": "Principal Business Intelligence, Capacity Delivery Reliability",
-      "updated_date": "8/20/2026",
-      "element_text": "Found in container 2"
-    },
-    {
-      "title": "Business Intelligence Engineer, WWPS Reporting and Analytics Center of Excellence (RACE)",
-      "updated_date": "8/20/2026",
-      "element_text": "Found in container 3"
-    },
-    {
-      "title": "Business Intelligence Engineer II, Rapid & Rural Logistics (R2L) Science & AI",
-      "updated_date": "8/20/2026",
-      "element_text": "Found in container 4"
-    }
-  ]
+  "amazon_bi_data_engineering": []
 }
