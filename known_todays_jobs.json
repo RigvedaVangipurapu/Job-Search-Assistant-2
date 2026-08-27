@@ -1,14 +1,19 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer, MEDICI",
+      "title": "Sr Business Intelligence Engineer, AWS GDSP 3PX",
       "updated_date": "8/27/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Business System Analyst, re:Cycle Reverse Logistics",
+      "title": "Business Intelligence Engineer, MEDICI",
       "updated_date": "8/27/2026",
       "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business System Analyst, re:Cycle Reverse Logistics",
+      "updated_date": "8/27/2026",
+      "element_text": "Found in container 2"
     }
   ]
 }
