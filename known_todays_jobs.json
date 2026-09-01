@@ -1,24 +1,3 @@
 {
-  "amazon_bi_data_engineering": [
-    {
-      "title": "Business System Analyst, re:Cycle Reverse Logistics",
-      "updated_date": "8/31/2026",
-      "element_text": "Found in container 0"
-    },
-    {
-      "title": "Business Intelligence Engineer, AWS Field Exp - BPO",
-      "updated_date": "8/31/2026",
-      "element_text": "Found in container 1"
-    },
-    {
-      "title": "Business Intelligence Engineer , World Wide Engineering and Innovation",
-      "updated_date": "8/31/2026",
-      "element_text": "Found in container 2"
-    },
-    {
-      "title": "Data Engineer, CIA-Core Engine",
-      "updated_date": "8/31/2026",
-      "element_text": "Found in container 3"
-    }
-  ]
+  "amazon_bi_data_engineering": []
 }
