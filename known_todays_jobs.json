@@ -1,19 +1,44 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer III, ASP Insights",
+      "title": "Business Analyst, Relay Trust",
       "updated_date": "9/8/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Sr Business Intelligence Engineer III, Rapid and Rural Logistics",
+      "title": "Senior Business Intelligence Engineer, ShipTech Analytics",
       "updated_date": "9/8/2026",
       "element_text": "Found in container 1"
     },
     {
-      "title": "Business Intelligence Engineer II, Alexa Devices Business Insights",
+      "title": "Data Engineer II, Shopbop Data",
       "updated_date": "9/8/2026",
       "element_text": "Found in container 2"
+    },
+    {
+      "title": "Business Analyst, Amazon Relay",
+      "updated_date": "9/8/2026",
+      "element_text": "Found in container 3"
+    },
+    {
+      "title": "Data Engineer I, Zappos Analytics",
+      "updated_date": "9/8/2026",
+      "element_text": "Found in container 4"
+    },
+    {
+      "title": "Business Intelligence Engineer II, Alexa Devices Business Insights",
+      "updated_date": "9/8/2026",
+      "element_text": "Found in container 5"
+    },
+    {
+      "title": "Business Intelligence Engineer III, ASP Insights",
+      "updated_date": "9/8/2026",
+      "element_text": "Found in container 6"
+    },
+    {
+      "title": "Sr Business Intelligence Engineer III, Rapid and Rural Logistics",
+      "updated_date": "9/8/2026",
+      "element_text": "Found in container 7"
     }
   ]
 }
