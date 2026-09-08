@@ -1,3 +1,19 @@
 {
-  "amazon_bi_data_engineering": []
+  "amazon_bi_data_engineering": [
+    {
+      "title": "Business Intelligence Engineer III, ASP Insights",
+      "updated_date": "9/8/2026",
+      "element_text": "Found in container 0"
+    },
+    {
+      "title": "Sr Business Intelligence Engineer III, Rapid and Rural Logistics",
+      "updated_date": "9/8/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intelligence Engineer II, Alexa Devices Business Insights",
+      "updated_date": "9/8/2026",
+      "element_text": "Found in container 2"
+    }
+  ]
 }
