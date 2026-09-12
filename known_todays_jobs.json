@@ -1,24 +1,3 @@
 {
-  "amazon_bi_data_engineering": [
-    {
-      "title": "Data Engineer, SPTC",
-      "updated_date": "9/11/2026",
-      "element_text": "Found in container 0"
-    },
-    {
-      "title": "Business Analyst, Relay Trust",
-      "updated_date": "9/11/2026",
-      "element_text": "Found in container 1"
-    },
-    {
-      "title": "Business Intelligence Engineer II, AWF Exports Visibility",
-      "updated_date": "9/11/2026",
-      "element_text": "Found in container 2"
-    },
-    {
-      "title": "Procore Administrator, Business Analyst, Worldwide Grocery Stores - Growth & Development",
-      "updated_date": "9/11/2026",
-      "element_text": "Found in container 3"
-    }
-  ]
+  "amazon_bi_data_engineering": []
 }
