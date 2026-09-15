@@ -1,9 +1,24 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Sr Business Intelligence Engineer III, SCOT - Long Term Planning and Forecasting",
+      "title": "Sr. Business Intelligence Engineer, Advertising Support and Operations",
       "updated_date": "9/15/2026",
       "element_text": "Found in container 0"
+    },
+    {
+      "title": "Director, Product Analytics",
+      "updated_date": "9/15/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Director, Customer Service Analytics",
+      "updated_date": "9/15/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Sr Business Intelligence Engineer III, SCOT - Long Term Planning and Forecasting",
+      "updated_date": "9/15/2026",
+      "element_text": "Found in container 3"
     }
   ]
 }
