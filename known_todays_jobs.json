@@ -1,14 +1,24 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer, Amazon Logistics, WW AMZL Business Intelligence and Analytics - ORBIT",
+      "title": "Data Engineer, AWS DC Central Operations",
       "updated_date": "9/16/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Business Analyst, Relay Trust",
+      "title": "Sr Business Intelligence Engineer, Amazon Global Data Center Ops Central Insight and Analytics Team",
       "updated_date": "9/16/2026",
       "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intelligence Engineer, Amazon Logistics, WW AMZL Business Intelligence and Analytics - ORBIT",
+      "updated_date": "9/16/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Business Analyst, Relay Trust",
+      "updated_date": "9/16/2026",
+      "element_text": "Found in container 3"
     }
   ]
 }
