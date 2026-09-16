@@ -1,24 +1,29 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Data Engineer, AWS DC Central Operations",
+      "title": "Business Intelligence Engineer II, CDR Pillar 1 Strategy and DX",
       "updated_date": "9/16/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Sr Business Intelligence Engineer, Amazon Global Data Center Ops Central Insight and Analytics Team",
+      "title": "Data Engineer, AWS DC Central Operations",
       "updated_date": "9/16/2026",
       "element_text": "Found in container 1"
     },
     {
-      "title": "Business Intelligence Engineer, Amazon Logistics, WW AMZL Business Intelligence and Analytics - ORBIT",
+      "title": "Sr Business Intelligence Engineer, Amazon Global Data Center Ops Central Insight and Analytics Team",
       "updated_date": "9/16/2026",
       "element_text": "Found in container 2"
     },
     {
-      "title": "Business Analyst, Relay Trust",
+      "title": "Business Intelligence Engineer, Amazon Logistics, WW AMZL Business Intelligence and Analytics - ORBIT",
       "updated_date": "9/16/2026",
       "element_text": "Found in container 3"
+    },
+    {
+      "title": "Business Analyst, Relay Trust",
+      "updated_date": "9/16/2026",
+      "element_text": "Found in container 4"
     }
   ]
 }
