@@ -1,24 +1,34 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Analyst I, Verification Services",
+      "title": "Business Intelligence Engineer, Listing Analytics",
       "updated_date": "9/21/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Data Engineer, WWASFT",
+      "title": "Business Intelligence Engineer, Everyday Essentials Replenishment",
       "updated_date": "9/21/2026",
       "element_text": "Found in container 1"
     },
     {
-      "title": "Business Intelligence Engineer, Capacity Delivery Reliability",
+      "title": "Business Intelligence Engineer, Amazon Intermodal",
       "updated_date": "9/21/2026",
       "element_text": "Found in container 2"
     },
     {
-      "title": "Business Intelligence Engineer, Listing Analytics",
+      "title": "Business Analyst I, Verification Services",
       "updated_date": "9/21/2026",
       "element_text": "Found in container 3"
+    },
+    {
+      "title": "Data Engineer, WWASFT",
+      "updated_date": "9/21/2026",
+      "element_text": "Found in container 4"
+    },
+    {
+      "title": "Business Intelligence Engineer, Capacity Delivery Reliability",
+      "updated_date": "9/21/2026",
+      "element_text": "Found in container 5"
     }
   ]
 }
