@@ -1,3 +1,24 @@
 {
-  "amazon_bi_data_engineering": []
+  "amazon_bi_data_engineering": [
+    {
+      "title": "Sr Business Intelligence Engineer III, SCOT - Long Term Planning and Forecasting",
+      "updated_date": "9/22/2026",
+      "element_text": "Found in container 0"
+    },
+    {
+      "title": "Business Analyst, Selling Partner Experience, Selling Partner Experience EASE and Analytics (SPXEA)",
+      "updated_date": "9/22/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intelligence Engineer, Everyday Essentials Replenishment",
+      "updated_date": "9/22/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "BI Engineer, AWS Finance, Analytics and Science Team",
+      "updated_date": "9/22/2026",
+      "element_text": "Found in container 3"
+    }
+  ]
 }
