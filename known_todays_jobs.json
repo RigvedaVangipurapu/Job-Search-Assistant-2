@@ -1,29 +1,3 @@
 {
-  "amazon_bi_data_engineering": [
-    {
-      "title": "Business Analyst, Listing Analytics",
-      "updated_date": "9/25/2026",
-      "element_text": "Found in container 0"
-    },
-    {
-      "title": "Data Engineer II, Ring/Blink Customer Service Engineering and Insights",
-      "updated_date": "9/25/2026",
-      "element_text": "Found in container 1"
-    },
-    {
-      "title": "Sr. Business Intelligence Engineer, Accounting",
-      "updated_date": "9/25/2026",
-      "element_text": "Found in container 2"
-    },
-    {
-      "title": "Senior Business Intelligence Engineer, Private Pricing Programs and Experiences",
-      "updated_date": "9/25/2026",
-      "element_text": "Found in container 3"
-    },
-    {
-      "title": "Senior Business Intelligence Engineer, Private Pricing Programs and Experiences",
-      "updated_date": "9/25/2026",
-      "element_text": "Found in container 4"
-    }
-  ]
+  "amazon_bi_data_engineering": []
 }
