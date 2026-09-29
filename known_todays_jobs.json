@@ -1,14 +1,34 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer - SCOT, Fulfillment Optimization, SCOT-FO",
+      "title": "Senior Business Intelligence Engineer, Infra Supply Chain Automation",
       "updated_date": "9/29/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Sr. Business Intelligence Engineer, AWS Analytics Engineering",
+      "title": "Business Intelligence Engineer, Forecasting & Labs Analytics",
       "updated_date": "9/29/2026",
       "element_text": "Found in container 1"
+    },
+    {
+      "title": "Sr Business Intelligence Engineer III, SCOT - Long Term Planning and Forecasting",
+      "updated_date": "9/29/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Business Intelligence Engineer, North America Transportation Services",
+      "updated_date": "9/29/2026",
+      "element_text": "Found in container 3"
+    },
+    {
+      "title": "Business Intelligence Engineer - SCOT, Fulfillment Optimization, SCOT-FO",
+      "updated_date": "9/29/2026",
+      "element_text": "Found in container 4"
+    },
+    {
+      "title": "Sr. Business Intelligence Engineer, AWS Analytics Engineering",
+      "updated_date": "9/29/2026",
+      "element_text": "Found in container 5"
     }
   ]
 }
