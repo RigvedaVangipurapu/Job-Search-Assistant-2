@@ -1,3 +1,54 @@
 {
-  "amazon_bi_data_engineering": []
+  "amazon_bi_data_engineering": [
+    {
+      "title": "Private Pricing Programs and Experiences, 3PX, Private Pricing Programs & Experiences",
+      "updated_date": "10/8/2026",
+      "element_text": "Found in container 0"
+    },
+    {
+      "title": "Data Engineer, AWS GDSP A&I",
+      "updated_date": "10/8/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Senior Business Intelligence Engineer, Private Pricing Programs and Experiences",
+      "updated_date": "10/8/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Senior Business Intelligence Engineer, Private Pricing Programs and Experiences",
+      "updated_date": "10/8/2026",
+      "element_text": "Found in container 3"
+    },
+    {
+      "title": "BIE I - FBA Analytics, FBA Analytics",
+      "updated_date": "10/8/2026",
+      "element_text": "Found in container 4"
+    },
+    {
+      "title": "Data Engineer II, Global Logistics, Exports",
+      "updated_date": "10/8/2026",
+      "element_text": "Found in container 5"
+    },
+    {
+      "title": "Business Intelligence Engineer, Capacity Delivery Reliability",
+      "updated_date": "10/8/2026",
+      "element_text": "Found in container 6"
+    },
+    {
+      "title": "Data Engineer , AWS Infrastructure Supply Chain Intelligence",
+      "updated_date": "10/8/2026",
+      "element_text": "Found in container 7"
+    },
+    {
+      "title": "Business Intelligence Engineer I, SCOT-FO, TVP",
+      "updated_date": "10/8/2026",
+      "element_text": "Found in container 8"
+    },
+    {
+      "title": "Sr. Business Intelligence Engineer, Deal Tooling Insights, AWS GDSP Other",
+      "updated_date": "10/8/2026",
+      "element_text": "Found in container 9"
+    }
+  ]
 }
