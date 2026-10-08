@@ -1,29 +1,3 @@
 {
-  "amazon_bi_data_engineering": [
-    {
-      "title": "Senior Business Intelligence Engineer, Amazon Leo",
-      "updated_date": "10/7/2026",
-      "element_text": "Found in container 0"
-    },
-    {
-      "title": "Sr. Business Intelligence Engineer, Deal Tooling and I",
-      "updated_date": "10/7/2026",
-      "element_text": "Found in container 1"
-    },
-    {
-      "title": "Private Pricing Programs and Experiences, 3PX, Private Pricing Programs & Experiences",
-      "updated_date": "10/7/2026",
-      "element_text": "Found in container 2"
-    },
-    {
-      "title": "Senior Business Intelligence Engineer, Private Pricing Programs and Experiences",
-      "updated_date": "10/7/2026",
-      "element_text": "Found in container 3"
-    },
-    {
-      "title": "Business Intelligence Engineer II, TMAT Network Design Modeling",
-      "updated_date": "10/7/2026",
-      "element_text": "Found in container 4"
-    }
-  ]
+  "amazon_bi_data_engineering": []
 }
