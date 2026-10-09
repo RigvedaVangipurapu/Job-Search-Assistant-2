@@ -1,9 +1,19 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer - SCOT, Fulfillment Optimization, SCOT-FO LRN",
+      "title": "Business Analyst Intern \u2013 Summer 2027",
       "updated_date": "10/9/2026",
       "element_text": "Found in container 0"
+    },
+    {
+      "title": "Data Engineer II, Intelligent Talent Acquisition (ITA) - Data",
+      "updated_date": "10/9/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intelligence Engineer - SCOT, Fulfillment Optimization, SCOT-FO LRN",
+      "updated_date": "10/9/2026",
+      "element_text": "Found in container 2"
     }
   ]
 }
