@@ -1,9 +1,24 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Senior Business Intelligence Engineer III, Rapid and Rural Logistics",
+      "title": "Analytics and Insights Lead, AWS SMGS Ops DP&I(DP&I)",
       "updated_date": "10/13/2026",
       "element_text": "Found in container 0"
+    },
+    {
+      "title": "Business Intelligence Engineer II, CDR Pillar 1 Strategy and DX",
+      "updated_date": "10/13/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Agentic Data Engineer, Frontier AI Tooling",
+      "updated_date": "10/13/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Senior Business Intelligence Engineer III, Rapid and Rural Logistics",
+      "updated_date": "10/13/2026",
+      "element_text": "Found in container 3"
     }
   ]
 }
