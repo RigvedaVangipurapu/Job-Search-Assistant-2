@@ -1,14 +1,19 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Analyst II ReLo, BASIC",
+      "title": "Business Intelligence Engineer, Amazon Freight",
       "updated_date": "10/14/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Business Intelligence Engineer, Leo Global Customer Operations",
+      "title": "Business Analyst II ReLo, BASIC",
       "updated_date": "10/14/2026",
       "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intelligence Engineer, Leo Global Customer Operations",
+      "updated_date": "10/14/2026",
+      "element_text": "Found in container 2"
     }
   ]
 }
