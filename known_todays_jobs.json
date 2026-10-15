@@ -1,14 +1,19 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer - AWS, AWS DC Construction",
+      "title": "Business Intelligence Engineer, SSP Analytics, Seller Success Programs Analytics",
       "updated_date": "10/15/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Business Intelligence Engineer, Consumables Insights and Analytics",
+      "title": "Business Intelligence Engineer - AWS, AWS DC Construction",
       "updated_date": "10/15/2026",
       "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intelligence Engineer, Consumables Insights and Analytics",
+      "updated_date": "10/15/2026",
+      "element_text": "Found in container 2"
     }
   ]
 }
