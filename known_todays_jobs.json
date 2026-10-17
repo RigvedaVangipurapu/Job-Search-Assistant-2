@@ -1,14 +1,3 @@
 {
-  "amazon_bi_data_engineering": [
-    {
-      "title": "RL Business Analyst, re:Cycle Reverse Logistics",
-      "updated_date": "10/16/2026",
-      "element_text": "Found in container 0"
-    },
-    {
-      "title": "Business Intelligence Engineer - AWS, AWS DC Construction",
-      "updated_date": "10/16/2026",
-      "element_text": "Found in container 1"
-    }
-  ]
+  "amazon_bi_data_engineering": []
 }
