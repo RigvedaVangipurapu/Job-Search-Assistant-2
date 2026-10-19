@@ -1,9 +1,19 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer, Leo Global Customer Operations",
+      "title": "Agentic Data Engineer, Frontier AI Tooling",
       "updated_date": "10/19/2026",
       "element_text": "Found in container 0"
+    },
+    {
+      "title": "Business Intelligence Engineer, Key",
+      "updated_date": "10/19/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intelligence Engineer, Leo Global Customer Operations",
+      "updated_date": "10/19/2026",
+      "element_text": "Found in container 2"
     }
   ]
 }
