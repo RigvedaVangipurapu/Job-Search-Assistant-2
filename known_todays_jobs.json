@@ -1,9 +1,19 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Sr. Business Intelligence Engineer, AWS Marketplace",
+      "title": "Data Engineer II, GMAC FP&A",
       "updated_date": "10/21/2026",
       "element_text": "Found in container 0"
+    },
+    {
+      "title": "Business Intelligence Engineer - AWS, AWS DC Construction",
+      "updated_date": "10/21/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Sr. Business Intelligence Engineer, AWS Marketplace",
+      "updated_date": "10/21/2026",
+      "element_text": "Found in container 2"
     }
   ]
 }
