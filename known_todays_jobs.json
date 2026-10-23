@@ -1,3 +1,14 @@
 {
-  "amazon_bi_data_engineering": []
+  "amazon_bi_data_engineering": [
+    {
+      "title": "RL Business Analyst, re:Cycle Reverse Logistics",
+      "updated_date": "10/23/2026",
+      "element_text": "Found in container 0"
+    },
+    {
+      "title": "Business System Analyst, re:Cycle Reverse Logistics",
+      "updated_date": "10/23/2026",
+      "element_text": "Found in container 1"
+    }
+  ]
 }
