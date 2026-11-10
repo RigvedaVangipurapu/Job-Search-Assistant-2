@@ -1,14 +1,44 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Analyst, Seller External Relations",
+      "title": "Business Intelligence Engineer II, DSP Analytics",
       "updated_date": "11/10/2026",
       "element_text": "Found in container 0"
     },
     {
-      "title": "Business Intelligence Engineer, Prime Video Partner Experience & Supply Chain Analytics",
+      "title": "Business Intelligence Engineer, Global Procurement Organization",
       "updated_date": "11/10/2026",
       "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intelligence Engineer, Advertising Finance",
+      "updated_date": "11/10/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Business Intelligence Engineer, Studios Analytics",
+      "updated_date": "11/10/2026",
+      "element_text": "Found in container 3"
+    },
+    {
+      "title": "DE, Amazon Talent Solutions, ITDS Data Foundations",
+      "updated_date": "11/10/2026",
+      "element_text": "Found in container 4"
+    },
+    {
+      "title": "Sr. Business Intelligence Engineer, Advertising Support and Operations",
+      "updated_date": "11/10/2026",
+      "element_text": "Found in container 5"
+    },
+    {
+      "title": "Business Analyst, Seller External Relations",
+      "updated_date": "11/10/2026",
+      "element_text": "Found in container 6"
+    },
+    {
+      "title": "Business Intelligence Engineer, Prime Video Partner Experience & Supply Chain Analytics",
+      "updated_date": "11/10/2026",
+      "element_text": "Found in container 7"
     }
   ]
 }
