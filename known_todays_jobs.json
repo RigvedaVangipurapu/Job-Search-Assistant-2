@@ -1,9 +1,19 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Intelligence Engineer - SCOT, Fulfillment Optimization, SCOT-FO",
+      "title": "Business Intelligence Engineer, NA RME Strategy",
       "updated_date": "11/13/2026",
       "element_text": "Found in container 0"
+    },
+    {
+      "title": "Senior Data Engineer, WW Ops Finance - S&A",
+      "updated_date": "11/13/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Intelligence Engineer - SCOT, Fulfillment Optimization, SCOT-FO",
+      "updated_date": "11/13/2026",
+      "element_text": "Found in container 2"
     }
   ]
 }
