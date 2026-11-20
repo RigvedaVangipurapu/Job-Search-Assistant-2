@@ -1,3 +1,54 @@
 {
-  "amazon_bi_data_engineering": []
+  "amazon_bi_data_engineering": [
+    {
+      "title": "Sr. Business Intel Engineer, Relay Trust",
+      "updated_date": "11/20/2026",
+      "element_text": "Found in container 0"
+    },
+    {
+      "title": "Business Intelligence Engineer, Worldwide Defect Elimination Analytics",
+      "updated_date": "11/20/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Business Analyst I, Payment Risk",
+      "updated_date": "11/20/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Business Intelligence Engineer, Forecasting & Labs Analytics",
+      "updated_date": "11/20/2026",
+      "element_text": "Found in container 3"
+    },
+    {
+      "title": "Business Intelligence Engineer III, ORBIT - Capacity Planning BI",
+      "updated_date": "11/20/2026",
+      "element_text": "Found in container 4"
+    },
+    {
+      "title": "Business Intelligence Engineer II, SCOT - Long Term Planning and Forecasting",
+      "updated_date": "11/20/2026",
+      "element_text": "Found in container 5"
+    },
+    {
+      "title": "Sr Business Intelligence Engineer III, SCOT - Long Term Planning and Forecasting",
+      "updated_date": "11/20/2026",
+      "element_text": "Found in container 6"
+    },
+    {
+      "title": "Business Intelligence Engineer II, R2L Analytics",
+      "updated_date": "11/20/2026",
+      "element_text": "Found in container 7"
+    },
+    {
+      "title": "Business Intelligence Engineer II, R2L Analytics",
+      "updated_date": "11/20/2026",
+      "element_text": "Found in container 8"
+    },
+    {
+      "title": "Senior Business Intelligence Engineer, Prime Air",
+      "updated_date": "11/20/2026",
+      "element_text": "Found in container 9"
+    }
+  ]
 }
