@@ -1,9 +1,24 @@
 {
   "amazon_bi_data_engineering": [
     {
-      "title": "Business Analyst Intern \u2013 Summer 2027",
+      "title": "Data Engineer, Flex Analytics",
       "updated_date": "11/24/2026",
       "element_text": "Found in container 0"
+    },
+    {
+      "title": "Business Intelligence Engineer, Worldwide Defect Elimination Analytics",
+      "updated_date": "11/24/2026",
+      "element_text": "Found in container 1"
+    },
+    {
+      "title": "Principal Business Intelligence Engineer, Amazon Customer Service",
+      "updated_date": "11/24/2026",
+      "element_text": "Found in container 2"
+    },
+    {
+      "title": "Business Analyst Intern \u2013 Summer 2027",
+      "updated_date": "11/24/2026",
+      "element_text": "Found in container 3"
     }
   ]
 }
